@@ -26,3 +26,9 @@ function find(query) {
 
   return rows;
 }
+
+function findById(id) {
+  return db("users")
+    .where({ id })
+    .first();
+}
